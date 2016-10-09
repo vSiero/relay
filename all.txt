@@ -1,0 +1,83 @@
+#!/bin/bash
+#
+# First parameter $1 - relay number from 0 to 4
+# Second parameter $2 - Up/Down
+
+
+#if [ "$1" != ""]; then
+#    echo yes
+#else
+#    echo no
+#fi
+
+
+function usage {
+	echo 'usage: "$0" '
+
+}
+
+function r_on {
+
+case $1 in
+	1)
+	echo "1"
+	;;
+	2)
+	echo "2"
+	;;
+	3)
+	echo "3"
+	;;
+	4)
+	echo "4"
+	;;
+	*)
+	echo "unknown"
+	;;
+esac
+
+
+#echo 22 > /sys/class/gpio/export 2>&1
+#echo out > /sys/class/gpio/gpio22/direction 2>&1
+#echo 1 > /sys/class/gpio/gpio22/value 2>&1
+
+}
+
+
+#function r_off {
+
+#echo 22 > /sys/class/gpio/export
+#echo out > /sys/class/gpio/gpio22/direction
+#echo 0 > /sys/class/gpio/gpio22/value
+
+#}
+#!/bin/bash
+
+echo 23 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio23/direction
+echo 1 > /sys/class/gpio/gpio23/value
+#!/bin/bash
+
+echo 23 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio23/direction
+echo 0 > /sys/class/gpio/gpio23/value
+#!/bin/bash
+
+echo 24 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio24/direction
+echo 1 > /sys/class/gpio/gpio24/value
+#!/bin/bash
+
+echo 24 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio24/direction
+echo 0 > /sys/class/gpio/gpio24/value
+#!/bin/bash
+
+echo 25 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio25/direction
+echo 1 > /sys/class/gpio/gpio25/value
+#!/bin/bash
+
+echo 25 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio25/direction
+echo 0 > /sys/class/gpio/gpio25/value
